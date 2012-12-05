@@ -1,4 +1,5 @@
 DegreeMap::Application.routes.draw do
+
   resources :program_courses
 
   resources :course_offers
