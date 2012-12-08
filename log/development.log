@@ -1,0 +1,718 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (43.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (10.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "credit" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203030845')
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePrograms (20121203032453)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "programs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "year" integer, "dept" varchar(255), "degree" varchar(255), "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203032453')
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourseOffers (20121203042026)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "course_offers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "instructor" varchar(255), "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203042026')
+  [1m[36m (17.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProgramCourses (20121204200449)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "program_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "program_id" integer, "course_id" integer, "prerequisite_cid" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121204200449')
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCoursesProgramCourses (20121207225935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "courses_program_courses" ("course_id" integer NOT NULL, "program_course_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121207225935')
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_program_courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-07 16:06:15 -0700
+Connecting to database specified by database.yml
+Processing by ProgramCoursesController#index as HTML
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" [0m
+  Rendered program_courses/index.html.erb within layouts/application (7.6ms)
+Compiled course_offers.css  (36ms)  (pid 4974)
+Compiled courses.css  (1ms)  (pid 4974)
+Compiled program_courses.css  (1ms)  (pid 4974)
+Compiled programs.css  (1ms)  (pid 4974)
+Compiled scaffolds.css  (12ms)  (pid 4974)
+Compiled application.css  (124ms)  (pid 4974)
+Compiled jquery.js  (4ms)  (pid 4974)
+Compiled jquery_ujs.js  (0ms)  (pid 4974)
+Compiled course_offers.js  (637ms)  (pid 4974)
+Compiled courses.js  (144ms)  (pid 4974)
+Compiled program_courses.js  (117ms)  (pid 4974)
+Compiled programs.js  (146ms)  (pid 4974)
+Compiled application.js  (1191ms)  (pid 4974)
+Completed 200 OK in 1593ms (Views: 1500.9ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /programs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /program_courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /programs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:06:18 -0700
+Served asset /application.js - 304 Not Modified (39ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-07 16:07:09 -0700
+
+ActionController::RoutingError (undefined local variable or method `program_courses' for #<Class:0x9f8e2fc>):
+  app/models/program.rb:4:in `<class:Program>'
+  app/models/program.rb:1:in `<top (required)>'
+  app/controllers/programs_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-07 16:07:16 -0700
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.8) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.8) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__244917164__call__924031504__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[35mProgramCourse Load (0.2ms)[0m  SELECT "program_courses".* FROM "program_courses" 
+  Rendered program_courses/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /program_courses.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:07:24 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-07 16:07:42 -0700
+
+ActionController::RoutingError (undefined local variable or method `program_courses' for #<Class:0xb66d3bc8>):
+  app/models/course.rb:5:in `<class:Course>'
+  app/models/course.rb:1:in `<top (required)>'
+  app/controllers/courses_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (297.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (13.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "credit" integer, "program_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203030845')
+  [1m[36m (21.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePrograms (20121203032453)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "programs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "year" integer, "dept" varchar(255), "degree" varchar(255), "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203032453')
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourseOffers (20121203042026)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "course_offers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "instructor" varchar(255), "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203042026')
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProgramCourses (20121204200449)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "program_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "program_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121204200449')
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCoursesProgramCourses (20121207225935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "courses_program_courses" ("course_id" integer NOT NULL, "program_course_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (29.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121207225935')
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_program_courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-07 16:40:37 -0700
+Connecting to database specified by database.yml
+
+ActiveRecord::HasAndBelongsToManyAssociationForeignKeyNeeded (Cannot create self referential has_and_belongs_to_many association on 'Course#courses'. :association_foreign_key cannot be the same as the :foreign_key.):
+  app/models/course.rb:4:in `<class:Course>'
+  app/models/course.rb:1:in `<top (required)>'
+  app/controllers/courses_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (86.5ms)[0m  DELETE FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (111.1ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["credit", 3], ["description", "<p>\n        Development of analytical and computer-based skills for the analysis and\nsynthesis of signals, linear systems, and communications.\n      </p>"], ["program_id", nil], ["title", "ECE314 Signals and Systems"], ["updated_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00]]
+  [1m[36m (19.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["credit", 3], ["description", "<p>\n        Machine taxonomy and introduction to parallel programming. \n\t\tPerformance issues, speed-up, and efficiency. Interconnection networks and embeddings. \n\t\tParallel programming issues and models: control parallel, data parallel, and data flow. \n\t\tProgramming assignments on massively parallel machines.\n      </p>"], ["program_id", nil], ["title", "ECE432 Introduction to Parallel Processing"], ["updated_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["credit", 3], ["description", "<p>\n        The course is an introduction to cellular telephone systems and wireless networks, drawing upon a diversity of electrical engineering areas. \n\t\tTopics include cellular concepts, radio propagation, modulation methods and multiple access techniques.\n      </p>"], ["program_id", nil], ["title", "ECE442 Wireless Communications"], ["updated_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00]]
+  [1m[36m (19.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (245.1ms)[0m  DELETE FROM "programs"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "programs" ("created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["degree", "MS"], ["dept", "ECE"], ["description", "<p>\n        ECE Computer Engineering\n      </p>"], ["title", "Computer Engineering"], ["updated_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["year", 2012]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "programs" ("created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "<p>\n        ECE Electrical Engineering\n      </p>"], ["title", "Electrical Engineering"], ["updated_at", Fri, 07 Dec 2012 23:41:47 UTC +00:00], ["year", 2012]]
+  [1m[35m (16.9ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+Migrating to CreatePrograms (20121203032453)
+Migrating to CreateCourseOffers (20121203042026)
+Migrating to CreateProgramCourses (20121204200449)
+Migrating to CreateCoursesProgramCourses (20121207225935)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_program_courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (33.1ms)[0m  DELETE FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["credit", 3], ["description", "<p>\n        Development of analytical and computer-based skills for the analysis and\nsynthesis of signals, linear systems, and communications.\n      </p>"], ["program_id", nil], ["title", "ECE314 Signals and Systems"], ["updated_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["credit", 3], ["description", "<p>\n        Machine taxonomy and introduction to parallel programming. \n\t\tPerformance issues, speed-up, and efficiency. Interconnection networks and embeddings. \n\t\tParallel programming issues and models: control parallel, data parallel, and data flow. \n\t\tProgramming assignments on massively parallel machines.\n      </p>"], ["program_id", nil], ["title", "ECE432 Introduction to Parallel Processing"], ["updated_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "program_id", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["credit", 3], ["description", "<p>\n        The course is an introduction to cellular telephone systems and wireless networks, drawing upon a diversity of electrical engineering areas. \n\t\tTopics include cellular concepts, radio propagation, modulation methods and multiple access techniques.\n      </p>"], ["program_id", nil], ["title", "ECE442 Wireless Communications"], ["updated_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (12.0ms)[0m  DELETE FROM "programs"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "programs" ("created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["degree", "MS"], ["dept", "ECE"], ["description", "<p>\n        ECE Computer Engineering\n      </p>"], ["title", "Computer Engineering"], ["updated_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["year", 2012]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "programs" ("created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "<p>\n        ECE Electrical Engineering\n      </p>"], ["title", "Electrical Engineering"], ["updated_at", Fri, 07 Dec 2012 23:42:02 UTC +00:00], ["year", 2012]]
+  [1m[35m (11.9ms)[0m  commit transaction
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-07 16:42:13 -0700
+Connecting to database specified by database.yml
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 394ms (Views: 347.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /programs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /program_courses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /programs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:14 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/course_programs" for 127.0.0.1 at 2012-12-07 16:42:24 -0700
+
+ActionController::RoutingError (No route matches [GET] "/course_programs"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/program_course" for 127.0.0.1 at 2012-12-07 16:42:39 -0700
+
+ActionController::RoutingError (No route matches [GET] "/program_course"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/jarred/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" 
+  Rendered program_courses/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:43 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:52 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.1ms)[0m  SELECT "programs".* FROM "programs" 
+  Rendered programs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 59ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-07 16:42:58 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (39.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (10.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "credit" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203030845')
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePrograms (20121203032453)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "programs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "year" integer, "dept" varchar(255), "degree" varchar(255), "description" text, "college" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203032453')
+  [1m[36m (33.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourseOffers (20121203042026)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "course_offers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "instructor" varchar(255), "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203042026')
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProgramCourses (20121204200449)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "program_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "program_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121204200449')
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSemesters (20121208181636)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "semesters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121208181636')
+  [1m[36m (13.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCoursesSemesters (20121208182654)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses_semesters" ("course_id" integer NOT NULL, "semester_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121208182654')
+  [1m[36m (17.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (2.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_semesters")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("semesters")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (31.7ms)[0m  DELETE FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (53.2ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 08 Dec 2012 18:37:54 UTC +00:00], ["credit", 3], ["description", "<p>\n        Development of analytical and computer-based skills for the analysis and\nsynthesis of signals, linear systems, and communications.\n      </p>"], ["title", "ECE314 Signals and Systems"], ["updated_at", Sat, 08 Dec 2012 18:37:54 UTC +00:00]]
+  [1m[36m (20.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["credit", 3], ["description", "<p>\n        Machine taxonomy and introduction to parallel programming. \n\t\tPerformance issues, speed-up, and efficiency. Interconnection networks and embeddings. \n\t\tParallel programming issues and models: control parallel, data parallel, and data flow. \n\t\tProgramming assignments on massively parallel machines.\n      </p>"], ["title", "ECE432 Introduction to Parallel Processing"], ["updated_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["credit", 3], ["description", "<p>\n        The course is an introduction to cellular telephone systems and wireless networks, drawing upon a diversity of electrical engineering areas. \n\t\tTopics include cellular concepts, radio propagation, modulation methods and multiple access techniques.\n      </p>"], ["title", "ECE442 Wireless Communications"], ["updated_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (13.2ms)[0m  DELETE FROM "programs"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["college", nil], ["created_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["degree", "MS"], ["dept", "ECE"], ["description", "<p>\n        ECE Computer Engineering\n      </p>"], ["title", "Computer Engineering"], ["updated_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["year", 2012]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["college", nil], ["created_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "<p>\n        ECE Electrical Engineering\n      </p>"], ["title", "Electrical Engineering"], ["updated_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["year", 2012]]
+  [1m[35m (10.5ms)[0m  commit transaction

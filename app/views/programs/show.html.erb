@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @program.title %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @program.year %>
+</p>
+
+<p>
+  <b>Dept:</b>
+  <%= @program.dept %>
+</p>
+
+<p>
+  <b>Degree:</b>
+  <%= @program.degree %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @program.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>
