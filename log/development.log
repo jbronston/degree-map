@@ -716,3 +716,46 @@ Connecting to database specified by database.yml
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["college", nil], ["created_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "<p>\n        ECE Electrical Engineering\n      </p>"], ["title", "Electrical Engineering"], ["updated_at", Sat, 08 Dec 2012 18:37:55 UTC +00:00], ["year", 2012]]
   [1m[35m (10.5ms)[0m  commit transaction
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-08 11:52:30 -0700
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `program_courses' for #<Class:0xb6ec6f88>):
+  app/models/program.rb:4:in `<class:Program>'
+  app/models/program.rb:1:in `<top (required)>'
+  app/controllers/programs_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+Migrating to CreatePrograms (20121203032453)
+Migrating to CreateCourseOffers (20121203042026)
+Migrating to CreateProgramCourses (20121204200449)
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_semesters")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("semesters")[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 11:53:25 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (120ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-08 11:53:29 -0700
+
+ActionController::RoutingError (undefined local variable or method `program_courses' for #<Class:0xae67e04>):
+  app/models/course.rb:5:in `<class:Course>'
+  app/models/course.rb:1:in `<top (required)>'
+  app/controllers/courses_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.1ms)
+Connecting to database specified by database.yml
