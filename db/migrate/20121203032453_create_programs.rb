@@ -6,6 +6,7 @@ class CreatePrograms < ActiveRecord::Migration
       t.string :dept
       t.string :degree
       t.text :description
+      t.text :college
 
       t.timestamps
     end

@@ -1,6 +1,6 @@
 class Course < ActiveRecord::Base
   attr_accessible :credit, :description, :title
-  has_many :course_offers
-  has_many :program_courses
-  has_many :programs, :through => program_courses
+ 
+ 	has_and_belongs_to_many :semesters
+ 	has_many :course_offers
 end

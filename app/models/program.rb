@@ -1,5 +1,5 @@
 class Program < ActiveRecord::Base
-  attr_accessible :degree, :dept, :description, :title, :year
-  has_many :program_courses
-  has_many :courses, :through => program_courses
+  attr_accessible :college, :degree, :dept, :description, :title, :year
+  
+  has_one :program_course
 end
