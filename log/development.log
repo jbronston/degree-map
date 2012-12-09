@@ -1025,3 +1025,98 @@ Connecting to database specified by database.yml
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["college", nil], ["created_at", Sat, 08 Dec 2012 19:18:10 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "<p>\n        ECE Electrical Engineering\n      </p>"], ["title", "Electrical Engineering"], ["updated_at", Sat, 08 Dec 2012 19:18:10 UTC +00:00], ["year", 2012]]
   [1m[35m (12.1ms)[0m  commit transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (30.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (6.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCourses (20121203030845)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "credit" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203030845')
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePrograms (20121203032453)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "programs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "year" integer, "dept" varchar(255), "degree" varchar(255), "description" text, "college" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203032453')
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCourseOffers (20121203042026)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "course_offers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "instructor" varchar(255), "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121203042026')
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProgramCourses (20121204200449)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "program_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "program_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121204200449')
+  [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSemesters (20121208185623)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "semesters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "program_course_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121208185623')
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCoursesSemesters (20121208191205)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "courses_semesters" ("course_id" integer NOT NULL, "semester_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121208191205')
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("course_offers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses_semesters")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("program_courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("semesters")[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (13.7ms)[0m  DELETE FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["credit", 3], ["description", "\n        Development of analytical and computer-based skills for the analysis and\nsynthesis of signals, linear systems, and communications.\n      "], ["title", "ECE314 Signals and Systems"], ["updated_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["credit", 3], ["description", "\n        Machine taxonomy and introduction to parallel programming. \n\t\tPerformance issues, speed-up, and efficiency. Interconnection networks and embeddings. \n\t\tParallel programming issues and models: control parallel, data parallel, and data flow. \n\t\tProgramming assignments on massively parallel machines.\n      "], ["title", "ECE432 Introduction to Parallel Processing"], ["updated_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["credit", 3], ["description", "\n        The course is an introduction to cellular telephone systems and wireless networks, drawing upon a diversity of electrical engineering areas. \n\t\tTopics include cellular concepts, radio propagation, modulation methods and multiple access techniques.\n      "], ["title", "ECE442 Wireless Communications"], ["updated_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (7.8ms)[0m  DELETE FROM "programs"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["college", nil], ["created_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["degree", "MS"], ["dept", "ECE"], ["description", "\n        ECE Computer Engineering\n      "], ["title", "Computer Engineering"], ["updated_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["year", 2012]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["college", nil], ["created_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "\n        ECE Electrical Engineering\n      "], ["title", "Electrical Engineering"], ["updated_at", Sun, 09 Dec 2012 02:40:40 UTC +00:00], ["year", 2012]]
+  [1m[35m (5.2ms)[0m  commit transaction
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:41:00 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:41:11 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:41:12 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:41:14 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:41:15 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-12-08 19:41:17 -0700
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (5.8ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:42:48 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
