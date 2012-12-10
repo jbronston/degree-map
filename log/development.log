@@ -1120,3 +1120,311 @@ Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-08 19:42:48 -0700
 Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mSQL (217.4ms)[0m  DELETE FROM "courses"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (40.5ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 1], ["description", "\n        Insight into electrical engineering is gained through videos, hands-on experiments, use of computer software to \nlearn basic problem-solving skills and a team-oriented design project.\n      "], ["title", "ECE101 Introduction to Electrical and Computer Engineering"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (18.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Basic electrical elements and sources. Energy and power. Ohm's law and Kirchhoff's laws. Resistive networks, node \nand loop analysis. Network theorems. First-order and second-order circuits. Sinusoidal sources and complex representations \nimpedance, phasors, complex power. Three phase circuits.\n      "], ["title", "ECE203L Circuit Analysis"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 2], ["description", "\n        Introduction to laboratory practices and the use of test equipment. Measurements on basic electrical components, dc \nand ac circuits using ohmmeters, voltmeters, ammeters and oscilloscopes. Circuit simulation.\n      "], ["title", "ECE206L Instrumentation"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        General transient analysis of electrical circuits. Laplace transform with applications to circuit analysis. State-\nspace equations. Fourier series analysis. The network function; convolution; frequency response.\n      "], ["title", "ECE213 Circuit Analysis II"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (13.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Introducton to elementary data structures, program design and computer-based solution of engineering problems. \nTopics include use of pointers, stacks, queues, linked lists, trees, graphs, systems and device-level programming and \nsoftware design methodology.\n      "], ["title", "ECE231L Intermediate Programming and Engineering Problem Solving"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (13.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 4], ["description", "\n        Binary number systems. Boolean algebra. Combinational, sequential, and register transfer logic. VHDL. \nArithmetic/Logic unit. Memories, computer organization. Input-output. Microprocessors.\n      "], ["title", "ECE238L Computer Logic Design"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (14.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Continuous and discrete time signals and systems; time and frequency domain analysis of LTI systems. Fourier series \nand transforms, iscrete time Fourier series/transform sampling theorem, block diagrams, modulation/demodulation, filters.\n      "], ["title", "ECE314 Signals and Communications"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Introduction to diodes, bipolar, and field-effect transistors. Analysis, and design of digital circuits, gates, \nflip-flops and memory circuits. Circuits employing operational amplifiers. Analog to digital and digital to analog \nconverters.\n      "], ["title", "ECE321L Electronics I "], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Analysis, design and characterization of linear circuits including operational amplifiers. Design of biasing and \nreference circuits, multistage amplifiers, and feedback circuits.\n      "], ["title", "ECE322L Electronics II"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        An introduction to the analysis of data structure and algorithms. Topics include asymptotic notation, recurrence3 \nrelations and their solution, sorting, hash tables, basic priority queues, search trees and basic graph representationa dn \nsearch.\n      "], ["title", "ECE331 Data Structures and Algorithms"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Course considers design principles, implementation issues, and performance evaluation of various software paradigms \nin an integrated computeing environment. Topics include performance measurement and evaluation, progarm optimization for \nthe underlying architecture, integration and security for large-scale software systems.\n      "], ["title", "ECE335 Integrated Software Systems"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Survey of various levels of computer architecture and design: microprogramming and processor architecture, advanced \nassembly language programming, operating system concepts, and input/output via the operating system. 3 lectures, 1hr lab.\n      "], ["title", "ECE337L Introduction to Computer Architecture and Organization"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Advanced combinational circuits; XOR and transmission gates; computer-based optimization methods; RTL and HDL; \nintroduction to computer aided design; advanced sequential machines; asynchronous sequential machines; timing issues; \nmemory and memory interfacing; programmable logic devices; VLSI concepts.\n      "], ["title", "ECE338 Intermediate Logic Design"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Introduction to probability, random variables, random processes, probability distribution/density functions, \nexpectation correlation, power spectrum, WSS processes, confidence internals, transmission through LIT systems, \napplications of probability.\n      "], ["title", "ECE340 Probabilistic Methods in Engineering"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 4], ["description", "\n        Computers and Microprocessors: architecture, assembly language pro- gramming, input/output, and applications. 3 \nlectures, 3 hrs. lab.\n      "], ["title", "ECE344L Microprocessors"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Maxwells equations, plane wave propagation, waveguides and transmission lines, transient pulse propagation, and \nelementary dipole antennas.\n      "], ["title", "ECE360 Electromagnetic Fields and Waves"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 4], ["description", "\n        Introduction to quantum mechanics, crystal structures, insulators, metals, and semiconductor material properties, \nbipolar, field effect, and light emitting devices.\n      "], ["title", "ECE371 Materials and Devices"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 1], ["description", "\n        Topics in engineering practice, licensing, ethics and ethical problem-solving. Cases illustrating ethical issues \nfacing practicing engineers. One lecture and one recitation per week for eight weeks.\n      "], ["title", "ECE409 Engineering Ethics"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Design methodology and development of professional project-oriented skills including communication, team \nmanagement, and economics. Working in teams, a proposal for a large design is prepared in response to an industrial or in-\nhouse sponsor.\n      "], ["title", "ECE419L Senior Design I"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Continuation of 419L, students work in assigned design teams to implement proposal developed in 419L. Prototypes \nare built and tested to sponsor specifications, and oral and written reports made to the project sponsor.\n      "], ["title", "ECE420L Senior Design II"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Design of advanced analog electronic circuits. BJT and MOSFET operational amplifiers, current mirrors and output \nstages. Frequency response and compensation. Noise. A/D and D/A converters.\n      "], ["title", "ECE421/523 Analog Electronics"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        CMOS logic gates and circuits, transistor implementations, applications to sequential circuits, VLSI data path and \ncontroller design, VLSI routing issues and architectures, RTL and VLSI impacts, and applications to mivroprocessor design.\n      "], ["title", "ECE424 Digital VLSI Design"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (14.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Machine taxonomy and introduction to parallel programming. Performance issues, speed-up, and efficiency. \nInterconnection networks and embeddings. Parallel programming issues and models: control parallel, data parallel, and data \nflow. Programming assignments on massively parallel machines.\n      "], ["title", "ECE432 Introduction to Parallel Processing"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Introduction to the use of computer graphics to solve engineering problems. Relevant software and hardware \nconcepts. Use of modem hardware graphics devices. Description and manipulation of two and three dimensional objects. Hidden \nsurface removal. Term project required.\n      "], ["title", "ECE433 Computer Graphics"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Management and technical issues, including business conduct and ethics, related to the design of large software \nprojects. Student teams will complete the design, specification, implementation, testing, and documentation of a large \nhardware/software project. \n      "], ["title", "ECE435 Computer Engineering Design Project"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Fundamental principles of modern operating systems design, with emphasis on concurrency and resource management. \nTopics include processes, interprocess communication, semaphores, monitors, message passing, input/output device, deadlocks \nmemory management, files system design.\n      "], ["title", "ECE437L Computer Operating Systems"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Computer architecture; design and implementation at HDL level; ALU, exception handling and interrupts; addressing; \nmemory; speed issues; piplining; microprogramming; introduction to distributed and parallel processing; buses; bus \nprotocols, and bus masters. CAD project to include written and oral presentations. \n      "], ["title", "ECE438 Design of Computers"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Bilateral Z transforms, region of convergence, review of sampling theorem, aliasing, the discrete Fourier transform \nand properties, analysis/design of FIR?IIR filters. FFT algorithms spectral analysis using FFT.\n      "], ["title", "ECE439 Introduction to Digital Filtering"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Theoretical and practical study of computer networks, including network structure and architectures. Principles of \ndigital communications systems. Network topologies, protocols and services. TCP/IP protocol suite. Point-to-point networks; \nbroadcast networks; local area networks; routing, error and flow control techniques.\n      "], ["title", "ECE440 Introduction to Computer Networks"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Amplitude/frequency modulation, pulse position/amplitude modulation, probabilistic noise model, AWGN, Roce \nrepresentation, figure of merit, phase locked loops, digital modulation, introduction to multiple access systems.\n      "], ["title", "ECE441 Introduction to Communication Systems"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        The course is an introduction to cellular telephone systems and wireless networks, drawing upon a diversity of \nelectrical engineering areas. \n\t\tTopics include cellular concepts, radio propagation, modulation methods and multiple access techniques.\n      "], ["title", "ECE442 Wireless Communications"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        The VHDL hardware description language is used for description of digital systems at several levels of complexity, \nfrom the system level to the gate level. Descriptions provide a mechanism for documentation, for simulation and for \nsynthesis.\n      "], ["title", "ECE443 Hardware Design with VHDL"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Introduction to the feedback control problem. Plant modeling, transfer function and state-space descriptions. \nStability criteria. Nyquist and root-locus design. Introduction to analytical design. Z-transferms and digital control. \nLaboratory design project.\n      "], ["title", "ECE445 Introduction to Control Systems"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Modeling of continuous and sampled-data control systems. State-space representation. Sensitivity, stability, and \noptimization of control systems. Design of compensators in the frequency and time domains. Phase-plane and describing \nfunction design for non-linear systems and laboratory design project.\n      "], ["title", "ECE446 Design of Feedback Control Systems"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Theory of fuzzy sets; foundations of fuzzy logic. Fuzzy logic is shown to contain evidence, possibility and \nprobability logics; course emphasizes engineering applications; control, pattern recognition, damage assessment, decisions; \nhardware/software demonstrations.\n      "], ["title", "ECE448/548 Fuzzy Logic with Applications"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        This lecture/laboratory course provides essential fundamentals for rf, wireless and microwave engineering. Topics \ninclude: wave propagation in cables, waveguides, and free space; impedance matching, standing wave ratios, Z- and S-\nparameters.\n      "], ["title", "ECE460/560 Introduction to Microwave Engineering"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Course will cover rf design techniques using transmission lines, strip lines and solid state devices. It will \ninclude the design of filters and matching elements required for realizable high frequency design. Amplifiers, oscillators \nand phase lock loops are covered from an rf perspective.\n      "], ["title", "ECE462/562 Electronics RF Design"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Electromagnetic theory of geometrical optics, Gaussian ray tracing and matrix methods, finite ray tracing, \naberrations, interference and diffraction.\n      "], ["title", "ECE463 Advanced Optics I"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Gain media, atomic transitions, line broadening, excitation methods, resonators, ray tracing, Hermite-Gaussian \nmodes, Q-switching, mode locking, oscillation and amplification, and laser types.\n      "], ["title", "ECE464 Laser Physics I"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Aspects of antenna theory and design; radiation from dipoles, loops, apertures, microstrip antennas and antenna \narrays.\n      "], ["title", "ECE469/569 Antennas for Wireless Communications"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        An intermediate study of semiconductor materials, energy band structure, p-n junctions, ideal and non-ideal effects \nin field effect and bipolar transistors.\n      "], ["title", "ECE471 Materials and Devices II"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        This course is primarily for non-EE majors (ChE, Physics, Chemistry, etc.) who will work in the semiconductor \nindustry. It describes integrated circuit electronics from basic concepts, transistor operation, logic circuit electronic, \nlayout and higher level design. Credit is not allowed for undergraduate or graduate Electrical or Computer Engineering \nmajors.\n      "], ["title", "ECE473 Semiconductor Materials, Devices, and Circuits"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Materials science of semiconductors, microelectronics technologies, device/circuit fabrication, parasitics and \npackaging. Lab project features small group design/fabrication/testing of MOS circuits.\n      "], ["title", "ECE474L/574L Microelectronics Processing I"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[36m (123.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00], ["credit", 3], ["description", "\n        Basic electo-optics and opto-electronics, with engineering applications. Interaction of light with matter. \nIntroduction to optics of dielectrics, metals and crystals. Introductory descriptions of electro-optics, acousto-optic and \nmagneto-optic effects and related devices. Light sources, displays and detectors. Elementary theory and applications of \nlasers, optical waveguides and fibers.\n      "], ["title", "ECE475 Introduction to Electo-Optics and Opto-Electronics"], ["updated_at", Mon, 10 Dec 2012 21:18:01 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", 3], ["description", "\n        The technology of fusion reactor systems including basic magnetic and inertial confinement physics; system designs; \nmaterial considerations; shielding; blanket design; fuel cycle; plant operations; magnets; and ICF drivers. Students will \ndesign a fusion reactor.\n      "], ["title", "ECE485 Fusion Technology"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", 3], ["description", "\n        Introduction to methods of design for manufacturability. Emphasis is on teamwork and designing to your customer needs. This is achieved through statistical methods and computer based systems.\n      "], ["title", "ECE486/586 Design for Manufacturability"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", 3], ["description", "\n        Professional practice under the guidance of a practicing engineer. Assignments include design or analysis of \nsystems or hardware, or computer programming. A preliminary proposal and periodic reports are required. The engineer \nevaluates student work; a faculty monitor assigns grade. (12 hour/week) (24 hours/week in a summer session). Offered on a \nCR/NC basis only.\n      "], ["title", "ECE490 Internship"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", -5], ["description", "\n        Registration for more than 3 hours requires permission of the department chairperson.\n      "], ["title", "ECE491 Undergraduate Problems"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", -2], ["description", "\n        A special seminar open only to honor students. Registration requires permission of department chair person.\n      "], ["title", "ECE493 Honors Seminar"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", -5], ["description", "\n        Open only to Honor students. Registration requires permission of the department chair person and of the supervising \nprofessor.\n      "], ["title", "ECE494 Honors Individual Study"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "courses" ("created_at", "credit", "description", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["credit", -3], ["description", "\n        Restriction: ECE major and senior standing.\n      "], ["title", "ECE495/595 Special Topics"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSQL (11.8ms)[0m  DELETE FROM "programs"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["college", nil], ["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["degree", "MS"], ["dept", "ECE"], ["description", "\n        ECE Computer Engineering\n      "], ["title", "Computer Engineering"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["year", 2012]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "programs" ("college", "created_at", "degree", "dept", "description", "title", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["college", nil], ["created_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["degree", "BS"], ["dept", "ECE"], ["description", "\n        ECE Electrical Engineering\n      "], ["title", "Electrical Engineering"], ["updated_at", Mon, 10 Dec 2012 21:18:02 UTC +00:00], ["year", 2012]]
+  [1m[35m (11.0ms)[0m  commit transaction
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-10 14:18:41 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (42ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  Rendered programs/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 201ms (Views: 151.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /programs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /courses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /course_offers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /courses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /semesters.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /programs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:50 -0700
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 60ms (Views: 48.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /courses.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-10 14:18:56 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
