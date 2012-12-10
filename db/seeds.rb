@@ -409,14 +409,14 @@ Course.create(title: 'ECE486/586 Design for Manufacturability',
       },  
   credit: 3)
 # . . .
-Course.create(title: 'ECE487 Semiconductor Factory Design and Operations',
-  description: 
-    %{
-        A detailed overview of the operations of an integrated circuit fabrication facility using Sandia’s 
-Microelectronics Development Laboratory as a prototype. Topics include building facilities, equipment, software tracking 
-and personnel.
-      },  
-  credit: 3)
+#Course.create(title: 'ECE487 Semiconductor Factory Design and Operations',
+ # description: 
+  #  %{
+ #   		A detailed overview of the operations of an integrated circuit fabrication facility using Sandia’s
+ #Microelectronics Development Laboratory as a prototype. Topics include building facilities, equipment, software tracking 
+#and personnel.
+ #     },  
+ # credit: 3)
 # . . .
 Course.create(title: 'ECE490 Internship',
   description: 
