@@ -1,14 +1,28 @@
 DegreeMap::Application.routes.draw do
 
-  resources :semesters
+  resources :semesters do
+  	resources :courses
+  end
 
-  resources :program_courses
+  resources :program_courses do
+  	resources :semesters do 
+  		resources :courses
+  	end
+  end
 
   resources :course_offers
 
-  resources :programs
+  resources :programs do
+  	resources :program_courses do
+  		resources :semesters do 
+  			resources :courses
+  		end
+  	end 
+  end
 
-  resources :courses
+  resources :courses do 
+  	resources :course_offers
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -59,7 +73,7 @@ DegreeMap::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'programs#index'
 
   # See how all your routes lay out with "rake routes"
 

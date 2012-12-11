@@ -12,9 +12,9 @@
 
 <% @program_courses.each do |program_course| %>
   <tr>
-    <td><%= program_course.program_id %></td>
-    <td><%= program_course.course_id %></td>
-    <td><%= program_course.prerequisite_cid %></td>
+    <td><%= " " %></td>
+    <td><%= " "%></td>
+    <td><%= " " %></td>
     <td><%= link_to 'Show', program_course %></td>
     <td><%= link_to 'Edit', edit_program_course_path(program_course) %></td>
     <td><%= link_to 'Destroy', program_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>

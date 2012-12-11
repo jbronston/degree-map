@@ -11,6 +11,46 @@
     </div>
   <% end %>
 
+  <table>
+  
+  <% for  i in 0..3 do %> 
+	  <tr>
+	  	<th> Year <%=(i+1)%> </th>
+	  </tr>
+	  
+	  <tr>
+	  	<th> Fall Semester </th>
+	  	<th> Spring Semester </th>
+	  </tr>
+	  
+	  <tr>
+	  	<td> <%= f.select :semesters[0].courses[0], [@available_courses.title, @available_courses] %> </td>
+	  	<th> semester<%=(i+2)%>-1 </th>
+	  </tr>
+	  <tr>  	
+	  	<th> semester<%=(i+1)%>-2 </th>
+	  	<th> semester<%=(i+2)%>-2 </th>
+	  </tr>
+	  <tr> 	
+	  	<th> semester<%=(i+1)%>-3 </th>
+	  	<th> semester<%=(i+2)%>-3 </th>
+	  </tr>
+	  <tr>  	
+	  	<th> semester<%=(i+1)%>-4 </th>
+	  	<th> semester<%=(i+2)%>-4 </th>
+	  </tr>
+	  <tr>  	
+	  	<th> semester<%=(i+1)%>-5 </th>
+	  	<th> semester<%=(i+2)%>-5 </th>
+	  </tr>  	
+	  	<th> semester<%=(i+1)%>-6 </th>
+	  	<th> semester<%=(i+2)%>-6 </th>
+		</tr>
+
+	<%end%>
+</table>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

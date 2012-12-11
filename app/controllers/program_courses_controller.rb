@@ -35,6 +35,9 @@ class ProgramCoursesController < ApplicationController
   # GET /program_courses/1/edit
   def edit
     @program_course = ProgramCourse.find(params[:id])
+  	@program = Program.where("id = ?", @program_course.program_id)
+  	@available_courses = Course.all
+  	
   end
 
   # POST /program_courses
