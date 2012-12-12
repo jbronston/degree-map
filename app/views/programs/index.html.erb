@@ -1,6 +1,4 @@
 <h1>Listing programs</h1>
-<h1> <%nil%></h1>
-<h1> after</h1>
 <table>
   <tr>
     <th>Title</th>
@@ -20,7 +18,7 @@
     <td><%= program.dept %></td>
     <td><%= program.degree %></td>
     <td><%= program.description %></td>
-    <td><%= link_to 'Show', program %></td>
+    <td><%= link_to 'Show', program.program_course %></td>
     <td><%= link_to 'Edit', edit_program_course_path(program.program_course) %></td>
     <td><%= link_to 'Destroy', program, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>

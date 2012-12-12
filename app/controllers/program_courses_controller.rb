@@ -14,7 +14,9 @@ class ProgramCoursesController < ApplicationController
   # GET /program_courses/1.json
   def show
     @program_course = ProgramCourse.find(params[:id])
-
+		@chosen_courses = @program_course.load_class_name_array
+		@program = Program.where("id = ?", @program_course.program_id)
+		
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @program_course }

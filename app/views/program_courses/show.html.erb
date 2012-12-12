@@ -1,16 +1,23 @@
 <p id="notice"><%= notice %></p>
+<h1> <%= @program[0].title %> </h1>
 
-<% for i in 1..40 %>
-	<p>
-  	
-  	<% current_course = "course" << i.to_s %>
-  	<b><%= current_course %></b>
-  		<%= @program_course.semesters[0].courses[0] %>
-	</p>
-  	
-  	
-	<%end%>
+<% for i in 0..3 %>
+	<% ten = 10*i %>
+
+	<h1><%= "Year " << (i+1).to_s %></h1>
+	<table>
+		<tr>
+			<th>Fall</th>
+			<th>Spring</th>
+		</tr>
+		<% for j in 0..4 %>
+		<tr>
+			<td><%= @chosen_courses[j+ten] %></td>
+   		<td><%= @chosen_courses[j+5+ten] %></td>
+		</tr>
+		<%end%>
+ </table>
+ <%end%>
 
 
-<%= link_to 'Edit', edit_program_course_path(@program_course) %> |
-<%= link_to 'Back', program_courses_path %>
+<%= link_to 'Back', programs_path %>

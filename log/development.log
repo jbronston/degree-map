@@ -16477,3 +16477,3646 @@ Served asset /programs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:12:00 -0700
 Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 14:15:22 -0700
+Connecting to database specified by database.yml
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (192.8ms)
+Completed 200 OK in 4477ms (Views: 4362.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /programs.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /program_courses.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /course_offers.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /semesters.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /programs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:28 -0700
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.9ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 13)
+  Rendered program_courses/_form.html.erb (58.6ms)
+  Rendered program_courses/edit.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 136ms (Views: 102.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:15:30 -0700
+Served asset /semesters.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:15:31 -0700
+Served asset /programs.js - 304 Not Modified (5ms)
+
+
+Started PUT "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:15:59 -0700
+Processing by ProgramCoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsJLP18C0Wh7Vtv+OpBIhAPTLvLc0P+EWKlLhNgo850=", "program_course"=>{"course1"=>"616", "course2"=>"616", "course3"=>"616", "course4"=>"", "course5"=>"", "course6"=>"", "course7"=>"", "course8"=>"", "course9"=>"", "course10"=>"", "course11"=>"", "course12"=>"", "course13"=>"", "course14"=>"", "course15"=>"", "course16"=>"", "course17"=>"", "course18"=>"", "course19"=>"", "course20"=>"", "course21"=>"", "course22"=>"", "course23"=>"", "course24"=>"", "course25"=>"", "course26"=>"", "course27"=>"", "course28"=>"", "course29"=>"", "course30"=>"", "course31"=>"", "course32"=>"", "course33"=>"", "course34"=>"", "course35"=>"", "course36"=>"", "course37"=>"", "course38"=>"", "course39"=>"", "course40"=>""}, "commit"=>"Update Program course", "id"=>"13"}
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSemester Load (0.3ms)[0m  [1mSELECT "semesters".* FROM "semesters" WHERE "semesters"."program_course_id" = 13[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" INNER JOIN "courses_semesters" ON "courses"."id" = "courses_semesters"."course_id" WHERE "courses_semesters"."semester_id" = 81
+  [1m[36m (2.4ms)[0m  [1mUPDATE "program_courses" SET "course1" = 616, "course2" = 616, "course3" = 616, "updated_at" = '2012-12-12 21:15:59.845961' WHERE "program_courses"."id" = 13[0m
+  [1m[35m (60.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/program_courses/13
+Completed 302 Found in 252ms (ActiveRecord: 64.3ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:15:59 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mSemester Load (2.2ms)[0m  SELECT "semesters".* FROM "semesters" WHERE "semesters"."program_course_id" = 13
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" INNER JOIN "courses_semesters" ON "courses"."id" = "courses_semesters"."course_id" WHERE "courses_semesters"."semester_id" = 81[0m
+  Rendered program_courses/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:16:00 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:28:25 -0700
+Connecting to database specified by database.yml
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.5ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+Completed 500 Internal Server Error in 111ms
+
+NameError (undefined local variable or method `params' for #<ProgramCourse:0x905ebb0>):
+  app/models/program_course.rb:47:in `load_class_name_array'
+  app/controllers/program_courses_controller.rb:17:in `show'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.3ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.2ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  Rendered program_courses/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 419ms (Views: 341.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /programs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /program_courses.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /courses.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /semesters.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /programs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:29:50 -0700
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  Rendered program_courses/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:12 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 14:31:25 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.1ms)[0m  SELECT "programs".* FROM "programs" 
+  [1m[36mProgramCourse Load (0.4ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1[0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1
+  Rendered programs/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 87ms (Views: 69.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /programs.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:26 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 14:31:27 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (13.2ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mProgram Load (0.5ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/_form.html.erb (132.1ms)
+  Rendered program_courses/edit.html.erb within layouts/application (165.0ms)
+Completed 200 OK in 199ms (Views: 182.5ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:31:28 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (3.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  Rendered program_courses/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:32:02 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:32:03 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:42:06 -0700
+Connecting to database specified by database.yml
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = NULL)[0m
+Completed 500 Internal Server Error in 133ms
+
+NoMethodError (undefined method `title' for nil:NilClass):
+  app/models/program_course.rb:67:in `load_class_name_array'
+  app/controllers/program_courses_controller.rb:17:in `show'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 14:47:38 -0700
+Connecting to database specified by database.yml
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  Rendered program_courses/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 178ms (Views: 66.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /program_courses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /programs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /semesters.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /program_courses.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /programs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 14:47:39 -0700
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:15:30 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.4ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  Rendered program_courses/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 76ms (Views: 11.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /course_offers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:15:31 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  Rendered program_courses/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:17:34 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  Rendered program_courses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:14 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.4ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /programs.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:30 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/14/edit" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 14)
+  Rendered program_courses/_form.html.erb (72.4ms)
+  Rendered program_courses/edit.html.erb within layouts/application (76.6ms)
+Completed 200 OK in 94ms (Views: 85.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:19:33 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started PUT "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Processing by ProgramCoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsJLP18C0Wh7Vtv+OpBIhAPTLvLc0P+EWKlLhNgo850=", "program_course"=>{"course1"=>"617", "course2"=>"620", "course3"=>"620", "course4"=>"619", "course5"=>"", "course6"=>"628", "course7"=>"628", "course8"=>"627", "course9"=>"626", "course10"=>"626", "course11"=>"", "course12"=>"", "course13"=>"", "course14"=>"", "course15"=>"", "course16"=>"", "course17"=>"", "course18"=>"", "course19"=>"", "course20"=>"", "course21"=>"", "course22"=>"", "course23"=>"", "course24"=>"", "course25"=>"", "course26"=>"", "course27"=>"", "course28"=>"", "course29"=>"", "course30"=>"", "course31"=>"", "course32"=>"", "course33"=>"", "course34"=>"", "course35"=>"", "course36"=>"", "course37"=>"", "course38"=>"", "course39"=>"", "course40"=>""}, "commit"=>"Update Program course", "id"=>"14"}
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSemester Load (0.2ms)[0m  [1mSELECT "semesters".* FROM "semesters" WHERE "semesters"."program_course_id" = 14[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" INNER JOIN "courses_semesters" ON "courses"."id" = "courses_semesters"."course_id" WHERE "courses_semesters"."semester_id" = 89
+  [1m[36m (0.4ms)[0m  [1mUPDATE "program_courses" SET "course1" = 617, "course2" = 620, "course3" = 620, "course4" = 619, "course6" = 628, "course7" = 628, "course8" = 627, "course9" = 626, "course10" = 626, "updated_at" = '2012-12-12 22:20:08.420220' WHERE "program_courses"."id" = 14[0m
+  [1m[35m (17.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/program_courses/14
+Completed 302 Found in 190ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 617)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 620)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 620)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 619)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 626)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 626)
+  Rendered program_courses/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:20:08 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:31 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/14/edit" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.3ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 14)
+  Rendered program_courses/_form.html.erb (47.7ms)
+  Rendered program_courses/edit.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /programs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:25:35 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:33:12 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:33:14 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (4.7ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 13)
+  Rendered program_courses/_form.html.erb (18.5ms)
+  Rendered program_courses/edit.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `course0' for #<ProgramCourse:0xb6972294>):
+    27: 		<% course_d2 = ("course" << d2.to_s).intern %>
+    28: 		
+    29: 		<tr>
+    30: 			<td><%= f.select course_d1, @available_courses, :include_blank => true %></td>
+    31:    		<td><%= f.select course_d2, @available_courses, :include_blank => true %></td>
+    32: 		</tr>
+    33: 		<%end%>
+  app/views/program_courses/_form.html.erb:30:in `block (3 levels) in _app_views_program_courses__form_html_erb__335857307__613274558'
+  app/views/program_courses/_form.html.erb:23:in `each'
+  app/views/program_courses/_form.html.erb:23:in `block (2 levels) in _app_views_program_courses__form_html_erb__335857307__613274558'
+  app/views/program_courses/_form.html.erb:14:in `each'
+  app/views/program_courses/_form.html.erb:14:in `block in _app_views_program_courses__form_html_erb__335857307__613274558'
+  app/views/program_courses/_form.html.erb:1:in `_app_views_program_courses__form_html_erb__335857307__613274558'
+  app/views/program_courses/edit.html.erb:3:in `_app_views_program_courses_edit_html_erb__262982192__611196928'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:33:53 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/_form.html.erb (66.5ms)
+  Rendered program_courses/edit.html.erb within layouts/application (67.4ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (undefined method `course41' for #<ProgramCourse:0xa4a65a0>):
+    28: 		
+    29: 		<tr>
+    30: 			<td><%= f.select course_d1, @available_courses, :include_blank => true %></td>
+    31:    		<td><%= f.select course_d2, @available_courses, :include_blank => true %></td>
+    32: 		</tr>
+    33: 		<%end%>
+    34:  </table>
+  app/views/program_courses/_form.html.erb:31:in `block (3 levels) in _app_views_program_courses__form_html_erb__335857307_88772430'
+  app/views/program_courses/_form.html.erb:23:in `each'
+  app/views/program_courses/_form.html.erb:23:in `block (2 levels) in _app_views_program_courses__form_html_erb__335857307_88772430'
+  app/views/program_courses/_form.html.erb:14:in `each'
+  app/views/program_courses/_form.html.erb:14:in `block in _app_views_program_courses__form_html_erb__335857307_88772430'
+  app/views/program_courses/_form.html.erb:1:in `_app_views_program_courses__form_html_erb__335857307_88772430'
+  app/views/program_courses/edit.html.erb:3:in `_app_views_program_courses_edit_html_erb__262982192__611196928'
+
+
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/jarred/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.1ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 13)
+  Rendered program_courses/_form.html.erb (52.6ms)
+  Rendered program_courses/edit.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 72ms (Views: 66.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /program_courses.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:38:26 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started PUT "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Processing by ProgramCoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsJLP18C0Wh7Vtv+OpBIhAPTLvLc0P+EWKlLhNgo850=", "program_course"=>{"course1"=>"616", "course2"=>"616", "course3"=>"616", "course4"=>"614", "course5"=>"613", "course6"=>"628", "course7"=>"631", "course8"=>"630", "course9"=>"625", "course10"=>"628", "course11"=>"614", "course12"=>"613", "course13"=>"613", "course14"=>"614", "course15"=>"613", "course16"=>"628", "course17"=>"630", "course18"=>"630", "course19"=>"629", "course20"=>"630", "course21"=>"615", "course22"=>"614", "course23"=>"614", "course24"=>"630", "course25"=>"631", "course26"=>"631", "course27"=>"627", "course28"=>"616", "course29"=>"614", "course30"=>"627", "course31"=>"628", "course32"=>"627", "course33"=>"623", "course34"=>"613", "course35"=>"613", "course36"=>"614", "course37"=>"627", "course38"=>"630", "course39"=>"631", "course40"=>"627"}, "commit"=>"Update Program course", "id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSemester Load (0.2ms)[0m  [1mSELECT "semesters".* FROM "semesters" WHERE "semesters"."program_course_id" = 13[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" INNER JOIN "courses_semesters" ON "courses"."id" = "courses_semesters"."course_id" WHERE "courses_semesters"."semester_id" = 81
+  [1m[36m (0.3ms)[0m  [1mUPDATE "program_courses" SET "course4" = 614, "course5" = 613, "course6" = 628, "course7" = 631, "course8" = 630, "course9" = 625, "course10" = 628, "course11" = 614, "course12" = 613, "course13" = 613, "course14" = 614, "course15" = 613, "course16" = 628, "course17" = 630, "course18" = 630, "course19" = 629, "course20" = 630, "course21" = 615, "course22" = 614, "course23" = 614, "course24" = 630, "course25" = 631, "course26" = 631, "course27" = 627, "course28" = 616, "course29" = 614, "course30" = 627, "course31" = 628, "course32" = 627, "course33" = 623, "course34" = 613, "course35" = 613, "course36" = 614, "course37" = 627, "course38" = 630, "course39" = 631, "course40" = 627, "updated_at" = '2012-12-12 22:40:16.760147' WHERE "program_courses"."id" = 13[0m
+  [1m[35m (31.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/program_courses/13
+Completed 302 Found in 43ms (ActiveRecord: 31.8ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 625)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 629)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 615)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 623)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  Rendered program_courses/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 13.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:16 -0700
+Served asset /programs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:40:17 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 625)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 629)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 615)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 623)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  Rendered program_courses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 10.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /courses.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:43:40 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.2ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:17 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (1.0ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 13)
+  Rendered program_courses/_form.html.erb (51.8ms)
+  Rendered program_courses/edit.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:45:18 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started PUT "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Processing by ProgramCoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsJLP18C0Wh7Vtv+OpBIhAPTLvLc0P+EWKlLhNgo850=", "program_course"=>{"course1"=>"", "course6"=>"", "course2"=>"", "course7"=>"", "course3"=>"616", "course8"=>"630", "course4"=>"614", "course9"=>"625", "course5"=>"613", "course10"=>"628", "course11"=>"", "course16"=>"", "course12"=>"613", "course17"=>"630", "course13"=>"613", "course18"=>"630", "course14"=>"614", "course19"=>"629", "course15"=>"613", "course20"=>"630", "course21"=>"615", "course26"=>"631", "course22"=>"614", "course27"=>"627", "course23"=>"614", "course28"=>"616", "course24"=>"630", "course29"=>"614", "course25"=>"631", "course30"=>"627", "course31"=>"628", "course36"=>"614", "course32"=>"627", "course37"=>"627", "course33"=>"623", "course38"=>"630", "course34"=>"613", "course39"=>"631", "course35"=>"613", "course40"=>"627"}, "commit"=>"Update Program course", "id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "program_courses" SET "course1" = NULL, "course6" = NULL, "course2" = NULL, "course7" = NULL, "course11" = NULL, "course16" = NULL, "updated_at" = '2012-12-12 22:46:05.059670' WHERE "program_courses"."id" = 13[0m
+  [1m[35m (47.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/program_courses/13
+Completed 302 Found in 57ms (ActiveRecord: 47.9ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCourse Load (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 625)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 629)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 615)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 623)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  Rendered program_courses/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 13.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /course_offers.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /programs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:46:05 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" 
+  [1m[36mProgramCourse Load (3.0ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1[0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1
+  Rendered programs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:42 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 625)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 629)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 615)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 623)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  Rendered program_courses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 10.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:44 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.1ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 13)
+  Rendered program_courses/_form.html.erb (80.5ms)
+  Rendered program_courses/edit.html.erb within layouts/application (82.1ms)
+Completed 200 OK in 95ms (Views: 91.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:50:52 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:51:08 -0700
+Connecting to database specified by database.yml
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.4ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (113.8ms)
+Completed 200 OK in 228ms (Views: 182.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /programs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /program_courses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /courses.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /semesters.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /course_offers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /program_courses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /programs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:09 -0700
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/program_courses/14/edit" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mProgramCourse Load (0.4ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mCourse Load (0.5ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 14)
+  Rendered program_courses/_form.html.erb (83.6ms)
+  Rendered program_courses/edit.html.erb within layouts/application (89.8ms)
+Completed 200 OK in 130ms (Views: 100.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:19 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Processing by ProgramCoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsJLP18C0Wh7Vtv+OpBIhAPTLvLc0P+EWKlLhNgo850=", "program_course"=>{"course1"=>"617", "course6"=>"628", "course2"=>"620", "course7"=>"628", "course3"=>"620", "course8"=>"627", "course4"=>"619", "course9"=>"626", "course5"=>"614", "course10"=>"626", "course11"=>"", "course16"=>"", "course12"=>"", "course17"=>"", "course13"=>"", "course18"=>"", "course14"=>"", "course19"=>"", "course15"=>"", "course20"=>"", "course21"=>"", "course26"=>"", "course22"=>"", "course27"=>"", "course23"=>"", "course28"=>"", "course24"=>"", "course29"=>"", "course25"=>"", "course30"=>"", "course31"=>"630", "course36"=>"", "course32"=>"", "course37"=>"", "course33"=>"", "course38"=>"", "course34"=>"", "course39"=>"", "course35"=>"", "course40"=>""}, "commit"=>"Update Program course", "id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSemester Load (0.1ms)[0m  [1mSELECT "semesters".* FROM "semesters" WHERE "semesters"."program_course_id" = 14[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" INNER JOIN "courses_semesters" ON "courses"."id" = "courses_semesters"."course_id" WHERE "courses_semesters"."semester_id" = 89
+  [1m[36m (0.3ms)[0m  [1mUPDATE "program_courses" SET "course5" = 614, "course31" = 630, "updated_at" = '2012-12-12 22:51:43.284724' WHERE "program_courses"."id" = 14[0m
+  [1m[35m (30.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/program_courses/14
+Completed 302 Found in 93ms (ActiveRecord: 31.7ms)
+
+
+Started GET "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 617)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 620)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 620)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 619)[0m
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 626)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 626)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  Rendered program_courses/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:43 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-12 15:51:55 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[36mProgramCourse Load (0.4ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" [0m
+  Rendered program_courses/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /course_offers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /program_courses.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:51:56 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[35mProgramCourse Load (0.9ms)[0m  SELECT "program_courses".* FROM "program_courses" 
+  Rendered program_courses/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:52:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 617)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 620)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 620)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 619)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 626)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 626)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 14)[0m
+  Rendered program_courses/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 80ms (Views: 18.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:03 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[35mProgramCourse Load (0.4ms)[0m  SELECT "program_courses".* FROM "program_courses" 
+  Rendered program_courses/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /semesters.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:57:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 617)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 620)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 620)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 619)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 626)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 626)[0m
+  [1m[35mCourse Load (6.2ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 14)[0m
+  Rendered program_courses/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /scaffolds.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:27 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:28 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" 
+  [1m[36mProgramCourse Load (0.6ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1[0m
+  [1m[35mProgramCourse Load (0.4ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1
+  Rendered programs/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.5ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/_form.html.erb (54.9ms)
+  Rendered program_courses/edit.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 102ms (Views: 97.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:34 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:58:39 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (6.7ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 625)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 629)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 615)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 623)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mProgram Load (0.1ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 30.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /course_offers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /programs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:40 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" 
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1[0m
+  [1m[35mProgramCourse Load (0.2ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1
+  Rendered programs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /course_offers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:44 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13/edit" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/_form.html.erb (51.9ms)
+  Rendered program_courses/edit.html.erb within layouts/application (54.9ms)
+Completed 200 OK in 79ms (Views: 74.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /programs.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /course_offers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:46 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Processing by ProgramCoursesController#index as HTML
+  [1m[35mProgramCourse Load (1.0ms)[0m  SELECT "program_courses".* FROM "program_courses" 
+  Rendered program_courses/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:58:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Processing by ProgramsController#index as HTML
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" [0m
+  [1m[35mProgramCourse Load (0.3ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1
+  [1m[36mProgramCourse Load (0.2ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1[0m
+  Rendered programs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /programs.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:13 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:14 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:14 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:14 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:14 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:14 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/13" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 616)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 625)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 630)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 629)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 615)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 631)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 616)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 614)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 623)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 613)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 613)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 631)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 627)
+  [1m[36mProgram Load (1.9ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 13)[0m
+  Rendered program_courses/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 9.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /program_courses.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:16 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/programs" for 127.0.0.1 at 2012-12-12 15:59:19 -0700
+Processing by ProgramsController#index as HTML
+  [1m[35mProgram Load (0.7ms)[0m  SELECT "programs".* FROM "programs" 
+  [1m[36mProgramCourse Load (0.3ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 13 LIMIT 1[0m
+  [1m[35mProgramCourse Load (0.2ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."program_id" = 14 LIMIT 1
+  Rendered programs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:19 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:20 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/program_courses/14/edit" for 127.0.0.1 at 2012-12-12 15:59:21 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses" 
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 14)[0m
+  Rendered program_courses/_form.html.erb (106.2ms)
+  Rendered program_courses/edit.html.erb within layouts/application (109.1ms)
+Completed 200 OK in 126ms (Views: 122.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/program_courses/14/edit" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Processing by ProgramCoursesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mProgramCourse Load (0.1ms)[0m  SELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  [1m[35mProgram Load (0.2ms)[0m  SELECT "programs".* FROM "programs" WHERE (id = 14)
+  Rendered program_courses/_form.html.erb (66.8ms)
+  Rendered program_courses/edit.html.erb within layouts/application (68.7ms)
+Completed 200 OK in 116ms (Views: 109.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /programs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:22 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/program_courses/14" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Processing by ProgramCoursesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProgramCourse Load (0.1ms)[0m  [1mSELECT "program_courses".* FROM "program_courses" WHERE "program_courses"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 617)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 620)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 620)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 619)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 614)
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 628)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 628)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 627)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 626)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE (id = 626)[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE (id = 630)
+  [1m[36mProgram Load (0.2ms)[0m  [1mSELECT "programs".* FROM "programs" WHERE (id = 14)[0m
+  Rendered program_courses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /programs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /program_courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /course_offers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/course_offers.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /course_offers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/program_courses.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /program_courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/programs.js?body=1" for 127.0.0.1 at 2012-12-12 15:59:25 -0700
+Served asset /programs.js - 304 Not Modified (0ms)

@@ -11,14 +11,28 @@
     </div>
   <% end %>
 	
-	<% for i in 1..40 %>
-  	<% current_course = ("course" << i.to_s).intern %>
-  	
-  	<div class="field">
-  		<%= f.label current_course, "Select Course" %><br />
-  		<%= f.select current_course, @available_courses, :include_blank => true %>
-  	</div>
-	<%end%>
+	<% for i in 0..3 %>
+	<% ten = 10*i %>
+
+	<h1><%= "Year " << (i+1).to_s %></h1>
+	<table>
+		<tr>
+			<th>Fall</th>
+			<th>Spring</th>
+		</tr>
+		<% for j in 0..4 %>
+		<% d1 = j+1+ten %>
+		<% course_d1 = ("course" << d1.to_s).intern %>
+		<% d2 = j+6+ten %>
+		<% course_d2 = ("course" << d2.to_s).intern %>
+		
+		<tr>
+			<td><%= f.select course_d1, @available_courses, :include_blank => true %></td>
+   		<td><%= f.select course_d2, @available_courses, :include_blank => true %></td>
+		</tr>
+		<%end%>
+ </table>
+ <%end%>
 	
   <div class="actions">
     <%= f.submit %>
