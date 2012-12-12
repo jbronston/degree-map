@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121208191205) do
+ActiveRecord::Schema.define(:version => 20121212025913) do
 
   create_table "course_offers", :force => true do |t|
     t.integer  "course_id"
@@ -40,6 +40,46 @@ ActiveRecord::Schema.define(:version => 20121208191205) do
     t.integer  "program_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "course1"
+    t.integer  "course2"
+    t.integer  "course3"
+    t.integer  "course4"
+    t.integer  "course5"
+    t.integer  "course6"
+    t.integer  "course7"
+    t.integer  "course8"
+    t.integer  "course9"
+    t.integer  "course10"
+    t.integer  "course11"
+    t.integer  "course12"
+    t.integer  "course13"
+    t.integer  "course14"
+    t.integer  "course15"
+    t.integer  "course16"
+    t.integer  "course17"
+    t.integer  "course18"
+    t.integer  "course19"
+    t.integer  "course20"
+    t.integer  "course21"
+    t.integer  "course22"
+    t.integer  "course23"
+    t.integer  "course24"
+    t.integer  "course25"
+    t.integer  "course26"
+    t.integer  "course27"
+    t.integer  "course28"
+    t.integer  "course29"
+    t.integer  "course30"
+    t.integer  "course31"
+    t.integer  "course32"
+    t.integer  "course33"
+    t.integer  "course34"
+    t.integer  "course35"
+    t.integer  "course36"
+    t.integer  "course37"
+    t.integer  "course38"
+    t.integer  "course39"
+    t.integer  "course40"
   end
 
   create_table "programs", :force => true do |t|

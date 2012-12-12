@@ -15,4 +15,7 @@ class Program < ActiveRecord::Base
   	self.program_course.destroy
   end
   
+  def load_class_name_array
+  
+  end
 end

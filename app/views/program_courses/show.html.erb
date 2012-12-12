@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-
+<% for i in 1..40 %>
+	<p>
+  	
+  	<% current_course = "course" << i.to_s %>
+  	<b><%= current_course %></b>
+  		<%= @program_course.semesters[0].courses[0] %>
+	</p>
+  	
+  	
+	<%end%>
 
 
 <%= link_to 'Edit', edit_program_course_path(@program_course) %> |
